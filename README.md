@@ -12,11 +12,11 @@ Este proyecto ha sido creado con el propósito de obtener valor sobre los datos 
 
 ## 💡 Propósito del proyecto
 La implementación se basó en diseñar una arquitectura ETL que extrajo, procesó, limpió y cargó los datos crudos obtenidos que suelen presentarse en un formato complejo (JSON) y ruidoso para generar información accionable que permita tomar decisiones acertadas. El resultado permite visualizar el panorama empresarial colombiano de manera automatizada, buscando responder preguntas como:
-
-  🧮 ¿Qué empresas que han tenido un crecimiento positivo en su ganancia durante todos los años registrados?
-  🥇 En cada ciudad, ¿qué porcentaje de los ingresos totales de su sector captura la empresa líder?
+  
+  🧮 ¿Qué empresas han tenido un crecimiento positivo en su ganancia durante todos los años registrados? <br>
+  🥇 En cada ciudad, ¿qué porcentaje de los ingresos totales de su sector captura la empresa líder? <br>
   📊 ¿En qué departamentos de Colombia es más estratégico invertir según el macrosector económico?
- 
+   
 
 
 
@@ -32,35 +32,5 @@ El proyecto fue construido bajo un pipeline end-to-end automatizado que extrae l
 ![API](https://img.shields.io/badge/API-REST-orange?style=for-the-badge&logo=api&logoColor=white)
 
 
-graph TD
-    %% Definición de Nodos con Estilos
-    classDef business fill:#f9f,stroke:#333,stroke-width:2px,color:#000;
-    classDef source fill:#bbf,stroke:#333,stroke-width:2px,color:#000;
-    classDef process fill:#ff9,stroke:#333,stroke-width:2px,color:#000;
-    classDef storage fill:#bfb,stroke:#333,stroke-width:2px,color:#000;
-    classDef viz fill:#fbb,stroke:#333,stroke-width:2px,color:#000;
-    classDef git fill:#ddd,stroke:#333,stroke-width:2px,color:#000;
 
-    %% Nodos del Flujo
-    Q[🗣️ 1. Pregunta de Negocio]:::business
-    API(☁️ 2. Fuente: API Datos Abiertos):::source
-    PY{{🐍 3. Procesamiento: Python ETL}}:::process
-    SQL[(🗄️ 4. Almacenamiento: SQL DWH)]:::storage
-    PBI[📊 5. Visualización: Power BI]:::viz
-    GH((🐙 6. Portafolio: GitHub Repositorio)):::git
-
-    %% Conexiones y Flujo de Datos
-    Q -->|Define el alcance| API
-    API -->|Datos Crudos JSON| PY
-    PY -->|Limpieza & Modelo Estrella| SQL
-    SQL -->|Consultas & Métricas| PBI
-    PY -.->|Código Fuente| GH
-    SQL -.->|Scripts DDL/DML| GH
-    PBI -.->|Documentación & Capturas| GH
-
-    %% Subgrafo para agrupar la solución técnica
-    subgraph "⚙️ Core de Ingeniería de Datos"
-        PY
-        SQL
-    end
 
