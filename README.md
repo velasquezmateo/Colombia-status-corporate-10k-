@@ -52,6 +52,11 @@ El objetivo específico del proyecto se basó en diseñar una arquitectura ETL r
 El proyecto fue construido bajo un pipeline end-to-end automatizado que extrae los datos financieros más recientes de las empresas alojados en un servidor y compartidos a través de datos.gov.co. Se realiza la petición para consumo de datos y los devuelve a través de la API  en formato JSON.
 <img width="1315" height="445" alt="Gemini_Generated_Image_o3l8eho3l8eho3l8" src="https://github.com/user-attachments/assets/81140b3f-91b5-4ff8-b279-23f85ba19a55" />
 
+El viaje del dato:
+
+### Ingesta(Extract): Se consume la API de Socrata de la web datos.gov.co mediante la librería Request de Python garantizando la extracción total de 40.000 registros.
+
+
 
 
 
