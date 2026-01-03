@@ -11,10 +11,11 @@ Este proyecto ha sido creado con el propósito de obtener valor sobre los datos 
 
 ## Índice
 1. [Diccionario de campos](#diccionario)
-2. [Propósito del proyecto](#proposito)
-3. [Arquitectura de Datos](#arquitectura)
-4. [Instalación y Uso](#instalación)
-5. [Análisis y Hallazgos](#análisis)
+2. [Directorio](#directorio)
+3. [Propósito del proyecto](#proposito)
+4. [Arquitectura de Datos](#arquitectura)
+5. [Instalación y Uso](#instalación)
+6. [Análisis y Hallazgos](#análisis)
 
 
 <a name="diccionario"></a>
@@ -38,7 +39,22 @@ Este proyecto ha sido creado con el propósito de obtener valor sobre los datos 
 | **MACROSECTOR** | `macrosector` | Texto | Sector al que pertenece la sociedad. |
 | **INGRESOS OPERACIONALES**| `ingresos_operacionales`| Texto* | Ingresos operacionales registrados. |
 
-*\*Nota: Los campos marcados como "Texto" son transformados a numéricos en el proceso de ETL.*
+*\*Nota: Los campos marcados como "Texto" son transformados a numéricos en el proceso de ETL.* <br>
+
+<a name="directorio"></a>
+## 📁 Directorio
+
+Colombia-status-corporate-10k/
+├── src/
+│   └── etl_pipeline.py       # ETL en Python
+├── sql/
+│   └── queries_negocio.sql   # Consultas de negocio
+├── dashboard/
+│   ├── reporte_final.pbix    # archivo de Power BI
+│   └── capturas/             
+├── requirements.txt          # Librerías
+├── .gitignore                # Archivos basura
+└── README.md                 
 
 <a name="proposito"></a>
 ## 💡 Propósito del proyecto
@@ -63,7 +79,7 @@ Se realiza ingeniería de características mediante la creación de columnas que
 En esta estapa se normaliza el dataframe en cinco tablas dimensiones, configurando un **esquema estrella** con cinco tablas dimensiones y una tabla de hechos que contiene columnas numéricas y claves foráneas. <br>
 Se exportan las tablas al data warehouse MySQL a través del motor de SQLAlchemy. <br>
 
-**3. Data warehouse**: Luego del data cleansing, se almacenan los datos en la base de datos de MySQL mediante permitiendo realizar 9 consultas relevantes para el análisis exploratorio de los datos y probar la eficacia del modelo de datos previo a la exportación de las tablas a Power BI.
+**3. Data warehouse**: Luego del data cleansing, se almacenan los datos en la base de datos de MySQL permitiendo realizar 9 consultas relevantes para el análisis exploratorio de los datos y probar la eficacia del modelo de datos previo a la exportación de las tablas a Power BI.
 
 
 
