@@ -16,6 +16,7 @@ Este proyecto ha sido creado con el propósito de obtener valor sobre los datos 
 4. [Instalación y Uso](#instalación)
 5. [Análisis y Hallazgos](#análisis)
 
+
 <a name="diccionario"></a>
 ## 📂 Diccionario de campos
 
