@@ -56,10 +56,12 @@ El viaje del dato:
 
 **1. Ingesta(Extract)**: Se consume la API de Socrata de la web datos.gov.co mediante la librería Request de Python garantizando la extracción total de 40.000 registros. <br>
 A partir de ahí, los datos se almacenan en una tabla estructurada gracias a la conversión de datos en formato JSON a Dataframe que ofrece la librería Pandas de Python. <br>
+
 **2. Procesamiento y modelado**: Se castean los datos a tipo númerico para el caso de columnas con cifras. También se eliminan duplicados y se estandarizan las columnas tipo texto.
 Se realiza ingeniería de características mediante la creación de columnas que evalúan rendimientos financieros y se eliminan algunas irrelevantes para el análisis. <br>
 En esta estapa se normaliza el dataframe en cinco tablas dimensiones, configurando un **esquema estrella** con cinco tablas dimensiones y una tabla de hechos que contiene columnas numéricas y claves foráneas. <br>
 Se exportan las tablas al data warehouse MySQL a través del motor de SQLAlchemy. <br>
+
 **3. Data warehouse**: Luego del data cleansing, se almacenan los datos en la base de datos de MySQL mediante permitiendo realizar 9 consultas relevantes para el análisis exploratorio de los datos y probar la eficacia del modelo de datos previo a la exportación de las tablas a Power BI.
 
 
