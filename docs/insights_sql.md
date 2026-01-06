@@ -1,5 +1,5 @@
 ## 📈 Análisis financiero de las 10.000 empresas más grande de Colombia 
-Aquí se detallan los resultados obtenidos en base a las consultas realizadas en el motor de MySQL para el conjunto de datos en cuestión. <br>
+Aquí se detallan los resultados obtenidos en base a las consultas realizadas en el motor de MySQL para el conjunto de datos en cuestión. Véase el código fuente [aquí](sql/consultas.sql) <br>
 
 ### 1. ¿Cuáles son los 3 sectores en cada departamento que ofrecen el mayor ROE promedio?
 **Hallazgos claves**<br>
@@ -91,11 +91,12 @@ Esta consulta filtra las empresas que superan el percentil 95 de su propio macro
 
 <br>
 *\*Nota: Top 3 de empresas outliers por macrosector* <br>
+
 **El Fenómeno de Servicios**: Es impactante observar que en el sector Servicios, el crecimiento llega hasta un 1900% (Micro Inversiones SAS), lo cual es típico de modelos de base tecnológica. <br>
 
 **Construcción e Infraestructura**: El liderazgo de China Harbour Engineering con un 580% refleja la ejecución de grandes proyectos de infraestructura (4G/5G) en el país, un dato clave para el análisis del PIB nacional. <br>
 
-Outliers vs. Media: Mientras que el crecimiento promedio de la economía puede estar entre el 1% y 10%, estas empresas operan en una realidad distinta, superando el 100% de crecimiento anual en casi todos los sectores. <br>
+**Outliers vs. Media**: Mientras que el crecimiento promedio de la economía puede estar entre el 1% y 10%, estas empresas operan en una realidad distinta, superando el 100% de crecimiento anual en casi todos los sectores. <br>
 
 ### 6. Detección de "Empresas Estrella" (Matriz BCG - Inversión)
 La matriz BCG es un cuadrante que permite clasificar a las empresas según el crecimiento dentro de su sector y qué tan fuerte es frente a sus competidores.
@@ -108,4 +109,57 @@ La matriz BCG es un cuadrante que permite clasificar a las empresas según el cr
 
 El análisis revela que el sector servicios concentra la mayor cantidad de 'estrellas', mientras que el sector manufactura domina en empresas se desplaza hacia el cuadrante de las vacas, indicando empresas maduras y con una sólida economía. Por el otro lado están los 'interrogantes' donde continúan dominando las empresas de servicios, esto puede darse por escenarios donde se crean startups gracias al avance de la IA pero que aún no relfjan un dominio claro en su nicho. Por último están las empresas perro donde el comercio domina por su bajo crecimiento y/o estancamiento.<br>
 Estos datos reflejan que para cualquier inversor o emprendedor, es importante conocer de antemano el nicho en el cual desea desarrollar su idea o capital, pues el panorama actual en Colombia ofrece una diversificación de empresas que impulsan la economía, pero hay que saber encontrarla.
+
+### 7. (Dominancia del mercado) En cada ciudad, ¿qué porcentaje de los ingresos totales de su sector captura la empresa líder?
+En esta consulta se refleja la dominancia de cada empresa en su respectivo sector. Esto es importante porque verifica si existen monopolios y fijación de precios por parte unas pocas firmas. A continuación se crea una tabla utilizada para el propósito de identificar dominancia de mercado:
+
+**📏 Escala de Dominancia de Mercado**
+
+| Porcentaje de Captura | Clasificación Técnica   | Significado Económico |
+|----------------------|-------------------------|-----------------------|
+| > 90%               | Monopolio Puro          | Una sola empresa controla virtualmente toda la oferta. No hay competencia real. |
+| 70% - 90%           | Monopolio de Hecho      | Dominancia absoluta. La empresa tiene poder total para fijar precios. |
+| 40% - 70%           | Posición de Dominio     | Mercado altamente concentrado. La empresa actúa como líder de precios. |
+| 20% - 40%           | Oligopolio Fuerte       | Pocos jugadores grandes. Hay competencia, pero el líder tiene mucha influencia. |
+| < 15%               | Mercado Atomizado       | Competencia perfecta o mercado fragmentado. Ninguna empresa dicta las reglas. |
+
+Con base en esto se filtra las empresas con dominancia mayor al 50% de captación de ingresos. En algunos departamentos existen monopolios puros:
+
+| Empresa                     | Departamento | Sector        |
+|----------------------------|--------------|---------------|
+| Oceanos SA                 | Bolívar      | Agropecuario  |
+| Aris Mining Marmato        | Caldas       | Minero        |
+| Agrícola del Occidente     | Cauca        | Agropecuario  |
+| Juanthosa Red              | Vaupés       | Servicios     |
+| Riopaila Palma             | Vichada      | Agropecuario  |
+Estas son empresas que fijan precios en sus respectivos sectores y territorios. Son mercados de un solo jugador.
+<br>
+Las siguientes empresas representan posiciones de dominio elevado, no son las únicas, pero capturan el mayor porcentaje:
+
+| Empresa                 | Departamento | Sector        | Captura del Sector |
+|-------------------------|--------------|---------------|--------------------|
+| Ecopetrol               | Bogotá       | Minero        | 63%                |
+| Refinería de Cartagena  | Bolívar      | Manufactura   | 65%                |
+| Tecnioriente Energy     | Arauca       | Manufactura   | 83%                |
+
+En general, muchos sectores en diferentes zonas se encuentran en un mercado atomizado, esto indica una sana competencia. No obstante, los inversionistas deben capturar esta data con el objetivo de analizar a profundidad qué sectores y territorios tienen bajo monopolio con miras a un crecimiento sostenido que posicione a la empresa en puestos de vanguardia.<br>
+
+### 8. Rotación de activos totales ¿Qué tan productiva es la infraestructura de cada departamento en Colombia en el año 2024?
+la Rotación de Activos (Ingresos/Activos) nos dice cuántos pesos de venta genera la empresa por cada peso que tiene invertido en infraestructura, maquinaria o inventarios.
+
+| Nivel de Eficiencia | Ratio            | Interpretación |
+|--------------------|------------------|----------------|
+| Alta               | > 1              | Generan más de lo que poseen en activos. |
+| Media              | 0.4 – 1          | Equilibrio industrial. |
+| Baja               | < 0.4            | Alta intensidad de capital o activos subutilizados. |
+
+Dentro de este ratio se hallan algunas conclusiones relevantes: <br>
+1. Los departamentos con mayor productividad en una gran proporción no alojan ciudades capitales. Esto, en conjunto con los resultados evidenciados en la pregunta 7 reflejan alto monopolio y muy poca presencia de competidores fuertes, lo cual hace a estas empresas ubicados aquí muy rentables.<br>
+2. Los deptos con ciudades capitales como Cundinamarca, Antioquia, El Atlántico y el Valle tienen productividad media, debido a una mayor presencia de organizaciones.
+3. Solo existe un dpto con baja productividad (Vichada). Es importante que el gobierno nacional establezca mecanismos que impulsen el sector económico de esta región.
+   
+`
+
+
+
 
