@@ -49,9 +49,9 @@ Este proyecto ha sido creado con el propósito de obtener valor sobre los datos 
 ## 📁 Directorio
 ```
 Colombia-status-corporate-10k/
-├── dashboard/
-│   ├── capturas/             # Screenshots del tablero interactivo
-│   └── reporte_final.pbix    # Archivo fuente de Power BI
+├── pbix/
+│   ├── star_schema/           
+│   └── reporte_empresas.pbix    # Archivo fuente de Power BI
 ├── docs/
 │   └── insights.md           # Análisis de los datos
 ├── sql/
