@@ -116,7 +116,7 @@ Se exportan las tablas al data warehouse MySQL a través del motor de SQLAlchemy
 
 https://github.com/user-attachments/assets/99f66c46-e293-4a25-b8dd-63512dba3ce4
 
-### Insights valces
+### Insights claves
 **Conversión de valor**: Cada visualización y filtrado muestra el ciclo de valor que produce cada eetapa del proceso del capital de una empresa, desde el manejo y uso eficiente de los activos, pasando por la captación de ingresos que generan éstos y finalmente su porcentaje de ganancia real para la empresa.<br>
 
 **Desempeño financiero**: Mediante un gráfico de dispersión, el cuadrante explica la situación financiera que experimentan las ciudades de Colombia bajo las empresas inscritas en su jurisdicción. Así, el gráfico evidencia el panorama bajo un marco temporal del rendimiento de sus activos (ROA) vs el rendimiento de su patrimonio (ROE) promedio.<br>
