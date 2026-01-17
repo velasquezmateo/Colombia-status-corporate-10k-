@@ -18,8 +18,7 @@ Este proyecto ha sido creado con el propósito de obtener valor sobre los datos 
 2. [Directorio](#directorio)
 3. [Propósito del proyecto](#proposito)
 4. [Arquitectura de Datos](#arquitectura)
-5. [Instalación y Uso](#instalación)
-6. [Análisis y Hallazgos](#análisis)
+5. [Análisis y Hallazgos](#analisis)
 
 
 <a name="diccionario"></a>
@@ -115,6 +114,7 @@ Se exportan las tablas al data warehouse MySQL a través del motor de SQLAlchemy
 
 https://github.com/user-attachments/assets/99f66c46-e293-4a25-b8dd-63512dba3ce4
 
+<a name="analisis"></a>
 ### Insights claves
 **Conversión de valor**: Cada visualización y filtrado muestra el ciclo de valor que produce cada eetapa del proceso del capital de una empresa, desde el manejo y uso eficiente de los activos, pasando por la captación de ingresos que generan éstos y finalmente su porcentaje de ganancia real para la empresa.<br>
 
