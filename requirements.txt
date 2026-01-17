@@ -1,1 +1,7 @@
 
+numpy
+requests
+pandas
+sqlalchemy
+polyfuzz
+rapidfuzz
