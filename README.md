@@ -1,4 +1,4 @@
-<h3 align="center"> 🏭 Situación financiera de las 15.000 empresas más grandes de Colombia </h3>
+<h3 align="center"> 🏭 Situación financiera de las 10.000+ empresas más grandes de Colombia </h3>
 
 <p align="center">
   <img width="554" height="170" alt="Sin título" src="https://github.com/user-attachments/assets/f261927b-56d1-4e58-ba6e-562704f415e0" />
@@ -112,8 +112,32 @@ Se exportan las tablas al data warehouse MySQL a través del motor de SQLAlchemy
 
 **3. Data warehouse**: Luego del data cleansing, se almacenan los datos en la base de datos de MySQL permitiendo realizar 9 consultas relevantes para el análisis exploratorio de los datos y probar la eficacia del modelo de datos previo a la exportación de las tablas a Power BI. Puedes ver el análisis en la base de datos MySQL [aquí](docs/insights_sql.md).
 
+**4. Dashboard**: Finalmente se visualizan los resultados a través de un panel de control en Power BI que muestra las métricas y datos empresariales por niveles de jerarquía, agrupándolos por macrosectores, regiones o empresa en específico. El siguiente video muestra un resumen de los hallazgos obtenidos durante la etapa de visualización: <br>
 
-https://github.com/user-attachments/assets/53254fb4-5470-4d51-851a-f85d148c1bc1
+https://github.com/user-attachments/assets/99f66c46-e293-4a25-b8dd-63512dba3ce4
+
+### Insights valces
+**Conversión de valor**: Cada visualización y filtrado muestra el ciclo de valor que produce cada eetapa del proceso del capital de una empresa, desde el manejo y uso eficiente de los activos, pasando por la captación de ingresos que generan éstos y finalmente su porcentaje de ganancia real para la empresa.<br>
+
+**Desempeño financiero**: Mediante un gráfico de dispersión, el cuadrante explica la situación financiera que experimentan las ciudades de Colombia bajo las empresas inscritas en su jurisdicción. Así, el gráfico evidencia el panorama bajo un marco temporal del rendimiento de sus activos (ROA) vs el rendimiento de su patrimonio (ROE) promedio.<br>
+
+**Apalancamiento**: El panel identifica sectores con alta dependencia de deuda para mantener sus operaciones activas. Valores mayores a 2 reflejan organizaciones que recurren a la deuda para potenciar sus operaciones generando eficiencia para la empresa con el fin de captar ingresos (ventas) con sus recursos (activos).<br>
+
+### 🏁 Conclusión y Próximos Pasos
+Este proyecto demuestra la capacidad de transformar datos financieros masivos (10,000+ empresas) en una herramienta de decisión estratégica. La arquitectura de datos fue optimizada para mantener la fluidez del reporte sin sacrificar el detalle granular.<br>
+Esta arquitectura mantiene la puerta abierta a futuras actualizaciones por parte de los órganos de vigilancia que anualmente comparten los estados financieros de las empresas más grandes del país. <br>
+
+### 📩 Contacto
+Si tienes alguna duda sobre la lógica financiera aplicada o quieres colaborar en proyectos similares, ¡no dudes en contactarme!<br>
+
+<a href="https://www.linkedin.com/in/velasquezmateo/">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Logo" />
+  **Mateo Velásquez**
+</a>
+
+
+
+
 
 
 
