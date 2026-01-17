@@ -28,12 +28,13 @@ c. Desierto de datos: Esto implica que los territorios donde hay muy pocos regis
 La consulta identificó 30 empresas con crecimiento en sus utilidades durante los años 2021-2024. En un mercado volátil como el colombiano, estas organizaciones demuestran eficiencia operativa y traslado de costos al cliente sin perder margen. <br>
 **Aplicación estratégica**: Para inversionistas de capital de riesgo interesados en el mercado colombiano, esta consulta puede ofrecerles una mirada específica hacia estas empresas económicamente sostenibles con el propósito de diversificar su capital. <br>
 
-| Automotores Toyota Colombia SAS | Bel Star SA | Cfc Gas Holding SAS | Colombia Movil SA E S P | Comercial Nutresa SAS | Distribuidora Colombina Limitada |
-|--------------------------------|-------------|--------------------|------------------------|----------------------|----------------------------------|
-| Empresa Colombiana De Cementos SAS | Grupo Argos SA | Grupo Bolivar S A | Gyplac SA | Hoteles Estelar SA | Industria Colombiana De Motocicletas Yamaha SA |
-| Industrias Electromecanicas Magnetron SAS | Interconexión Eléctrica SA ESP - Isa | Kopps Commercial SAS | Macfer Sca | Mc Victorias Tempranas SAS | Miniso Colombia SAS |
-| Oleoducto Central SA | Organizacion Delima SA Chc | Pintuco Colombia SAS | Plural Comunicaciones SAS | Productos Familia SA | Rappi SAS |
-| Samaria Llanos Exploration Sucursal Colombia | Soluciones Bolivar SAS | Sporty City SAS | Suramerica Comercial SAS | Torrecafe Aguila Roja Y Compañia SA | Wework Colombia SAS |
+|----------|----------|----------|----------|----------|
+| Automotores Toyota | Be Movil | Bel Star | Cfc Gas Holding | Comercial Nutresa |
+| Distribuidora Colombina | Empresa Colombiana De Cementos | Grupo Argos | Grupo Bolivar | Gyplac |
+| Hoteles Estelar | Industria Colombiana De Motocicletas Yamaha | Industrias Electromecanicas Magnetron | Interconexion Electrica Isa | Kopps Commercial |
+| Macfer | Mc Victorias Tempranas | Miniso | Oleoducto Central | Organizacion Delima Chc |
+| Pintuco | Plural Comunicaciones | Productos Familia | Rappi | Samaria Llanos Exploration |
+| Soluciones Bolivar | Sporty City | Suramerica Comercial | Torrecafe Aguila Roja Y Compania | Wework |
 <br>
 
 ### 3. ¿Qué empresas tienen Patrimonio negativo a lo largo de los años entre 2021-2024?
@@ -45,11 +46,16 @@ Este análisis identifica a las empresas cuyo patrimonio ha decrecido a niveles 
 **Intervención regulatoria**: La Supersociedades debe encargarse de la reorganización empresarial de estas empresas. Algunas de ellas ya están en estos trámites para hacer efectiva su liquidación. <br>
 A pesar de estar inscritas en esta lista de las 10.000 empresas con mayores ingresos o capital reportado, es muy probable que se mantengan operativas mediante la dependencia crítica de endeudamiento o de inyecciones constantes de capital de sus matrices para mantenerse activas. <br>
 
-| Acerias Paz De Rio SA | Almacenes Flamingo SA | Andean Tower Partners Colombia SAS | Bbi Colombia SAS | Bigfoot Colombia SAS | Cementos Tequendama SAS |
-|----------------------|----------------------|-----------------------------------|-----------------|----------------------|-------------------------|
-| Co Internet SAS | Colombia Telecomunicaciones SA ESP - Telefonica | Compañia Nacional De Levaduras Levapan SA | Compunet SA | Construcciones El Condor SA | Constructora Conconcreto SA |
-| Directv Colombia Limitada | Durman Colombia SAS | Emerald Energy Plc Sucursal Colombia | Experts Colombia SAS | Fabricato SA | Ferrovial Construccion SA Sucursal Colombia |
-| Ford Motor Colombia SAS | Fundacion Delamujer Colombia SAS | Garces Eder SAS |  |  |  | <br>
+|----------|----------|----------|----------|----------|
+| Acerias Paz De Rio | Almacenes Flamingo | Andean Tower Partners | Bbi | Bigfoot |
+| Cementos Tequendama | Co Internet | Compania Nacional De Levaduras Levapan | Compunet | Constructora Conconcreto |
+| Directv | Durman | Emerald Energy Plc | Energy | Experts |
+| Fabricato | Ford Motor | Fundacion Delamujer | Garces Eder | Gremca Agricultura Y Energia Sostenible |
+| Gt Services | Hatch | Immacolata | Ismocol | Masivo Capital |
+| Minera El Roble | Mondelez | Monster Energy | Phoenix Packaging Caribe | Productos Naturales De La Sabana |
+| Radio Cadena Nacional | Radiologos Asociados | Red Carnica | Specialized | Sumoto |
+| Telecomunicaciones Telefonica | Textiles Miratex | Tigre |  |  | 
+<br>
 
 *\*Nota: Muestra del total de empresas en quiebra técnica* <br>
 
@@ -69,40 +75,39 @@ En general, la mayoría de las departamento poseen un nivel Medio. Pese a esto, 
 | Montería | 75.00% | 🔴 Riesgo Alto |
 | --- | --- | --- |
 | Guaviare | 61.76% | 🟡 Medio |
-| Atlántico | 59.92% | 🟡 Medio |
-| Sucre | 59.06% | 🟡 Medio |
-| Caquetá | 58.73% | 🟡 Medio |
+| Atlántico | 60.00% | 🟡 Medio |
 | Cundinamarca | 57.18% | 🟡 Medio |
-| Bogotá DC | 56.85% | 🟡 Medio |
-| Risaralda | 55.64% | 🟡 Medio |
+| Bogotá D.C. | 56.85% | 🟡 Medio |
+| Antioquia | 53.98% | 🟡 Medio |
 | --- | --- | --- |
 | San Andrés y Providencia | 36.40% | 🟢 Riesgo Bajo |
-| Amazonas | 31.55% | 🟢 Riesgo Bajo |
 | Vichada | 22.22% | 🟢 Riesgo Bajo |
+
 <br>
 ### 5. (Venture capital) Encontrar las empresas cuyos ingresos crecieron por encima del percentil 95 en su respectivo macrosector (outliers)
 Esta consulta filtra las empresas que superan el percentil 95 de su propio macrosector al cierre del año 2024. Estas empresas crecieron significativamente más que sus competidores, lo que las categoriza como empresas outliers de alto rendimiento, a menudo por modelos de negocio innovadores o ventajas tecnológicas. 
 
-| Industria | Rk | Empresa                               | Tasa (%) de crecimiento |
-|------|----|--------------------------------------|----------|
-| 🥑 Agr | 1  | Camposol Colombia SAS                 | 200.0    |
-| 🥑 Agr | 2  | Sociedad Comercialización Calafate SAS| 112.5    |
-| 🥑 Agr | 3  | Bananeras Agrofuturo SAS              | 100.0    |
-| 🛒 Com | 1  | CI Golden Agri-Resources Colombia SAS | 600.0    |
-| 🛒 Com | 2  | Prolife Biotech Colombia SAS          | 425.0    |
-| 🛒 Com | 3  | Sociedad Comercialización Naranja    | 400.0    |
-| 🏗️ Inf | 1  | China Harbour Engineering Colombia    | 580.0    |
-| 🏗️ Inf | 2  | Byb Constructores SAS                 | 350.0    |
-| 🏗️ Inf | 3  | Concesionaria Vial Del Pacifico SAS  | 315.38   |
-| 🏭 Man | 1  | Odin Petroil SA                       | 344.44   |
-| 🏭 Man | 2  | Alambres Y Cables Técnicos SAS        | 250.0    |
-| 🏭 Man | 3  | Panamericana De Alimentos SAS         | 216.67   |
-| ⛏️ Min | 1  | Puerto Arturo SAS                     | 400.0    |
-| ⛏️ Min | 2  | Mkms Enerji Colombia                   | 220.0    |
-| ⛏️ Min | 3  | Promisol SAS                           | 83.33    |
-| 🧩 Ser | 1  | Micro Inversiones SAS                  | 1900.0   |
-| 🧩 Ser | 2  | Greenyellow Energia Colombia SAS       | 1000.0   |
-| 🧩 Ser | 3  | Latin Logistic Colombia SAS            | 850.0    | 
+| Industria | Rk | Empresa | Tasa (%) de crecimiento |
+|------|----|--------------------------------------|--------------------------|
+| 🥑 Agr | 1 | Camposol | 200.00 |
+| 🥑 Agr | 2 | Sociedad de Comercialización Internacional Calafate | 112.50 |
+| 🥑 Agr | 3 | Forest First | 100.00 |
+| 🛒 Com | 1 | CI Golden Agri Resources | 600.00 |
+| 🛒 Com | 2 | Prolife Biotec | 425.00 |
+| 🛒 Com | 3 | Sociedad de Comercialización Internacional de Negocios Naranja y Tecnología Financiera | 400.00 |
+| 🏗️ Con | 1 | China Harbour Engineering Company Limited | 580.00 |
+| 🏗️ Con | 2 | Concesionaria Vial del Pacífico | 315.38 |
+| 🏗️ Con | 3 | Grupo Theos | 300.00 |
+| 🏭 Man | 1 | Odin Petroil (Reestructuración) | 344.44 |
+| 🏭 Man | 2 | Alambres y Cables Técnicos | 250.00 |
+| 🏭 Man | 3 | Panamericana de Alimentos | 216.67 |
+| ⛏️ Min | 1 | Puerto Arturo | 400.00 |
+| ⛏️ Min | 2 | MKMS Enerji | 220.00 |
+| ⛏️ Min | 3 | Promisol | 83.33 |
+| 🧩 Ser | 1 | Micro Inversiones | 1900.00 |
+| 🧩 Ser | 2 | Latin Logistic | 850.00 |
+| 🧩 Ser | 3 | Vince Business | 766.67 |
+
 
 
 *\*Nota: Top 3 de empresas outliers por macrosector* <br>
