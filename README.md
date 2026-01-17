@@ -125,15 +125,21 @@ https://github.com/user-attachments/assets/99f66c46-e293-4a25-b8dd-63512dba3ce4
 
 ### 🏁 Conclusión y Próximos Pasos
 Este proyecto demuestra la capacidad de transformar datos financieros masivos (10,000+ empresas) en una herramienta de decisión estratégica. La arquitectura de datos fue optimizada para mantener la fluidez del reporte sin sacrificar el detalle granular.<br>
-Esta arquitectura mantiene la puerta abierta a futuras actualizaciones por parte de los órganos de vigilancia que anualmente comparten los estados financieros de las empresas más grandes del país. <br>
+Esta arquitectura mantiene la puerta abierta a futuras actualizaciones por parte de los órganos de control y vigilancia que anualmente comparten los estados financieros de las empresas más grandes del país. <br>
 
 ### 📩 Contacto
 Si tienes alguna duda sobre la lógica financiera aplicada o quieres colaborar en proyectos similares, ¡no dudes en contactarme!<br>
 
+<div align="center">
 <a href="https://www.linkedin.com/in/velasquezmateo/">
-  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Logo" />
-  **Mateo Velásquez**
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" />
 </a>
+<a href="https://medium.com/@mateov55">
+  <img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" />
+</a>
+
+<br>
+</div>
 
 
 
