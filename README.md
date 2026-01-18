@@ -112,7 +112,7 @@ Se exportan las tablas al data warehouse MySQL a través del motor de SQLAlchemy
 
 **4. Dashboard**: Finalmente se visualizan los resultados a través de un panel de control en Power BI que muestra las métricas y datos empresariales por niveles de jerarquía, agrupándolos por macrosectores, regiones o empresa en específico. El siguiente video muestra un resumen de los hallazgos obtenidos durante la etapa de visualización: <br>
 
-https://github.com/user-attachments/assets/99f66c46-e293-4a25-b8dd-63512dba3ce4
+![Video-Project-3](https://github.com/user-attachments/assets/4c5d4530-810d-41f0-979f-dc96e5bbe182)
 
 <a name="analisis"></a>
 ### Insights claves
